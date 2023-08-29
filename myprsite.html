@@ -43,31 +43,31 @@
             animation-name: start; animation-duration: 10s; animation-iteration-count: 1; animation-delay: 0s; animation-fill-mode: forwards; /*버튼 애니매이션*/
         } 
         
-        .main{padding-top: 75px; width: 100%; height: 3000px; position: relative; background-color: rgb(235, 231, 226);} /*바디 위쪽 여백 설정*/
+        .body{padding-top: 75px; width: 1348px; height: 3000px; position: relative; background-color: rgb(235, 231, 226);} /*바디 위쪽 여백 설정*/
 
           /*맨 처음 nice to meet you*/
-        .nice{height: 1500px;}
+        .nice{height: 1500px; background-color: rgb(235, 231, 226);}
         .ntm{text-align: center; font-size: 150px;}
         .ntmimg{width: 150px; height: 150px;}
         
-        .img_table1{top: -40%; position: relative;}
+        .img_table1{top: -76%; position: relative; background-color: rgb(235, 231, 226);}
         .img1{width: 1300px; height: 800px; left: 30px; position: relative;}
         .img2{width: 400px; height: 800px; margin: 100px;}
 
         /*기본 소개 스타일*/
         .move_texts{width: 100%;}
         .intro_pic{width: 50%; height: 890px; background-color: black;}
-        .intro_pic .img{border-radius: 70%; width: 300px; height: 300px; z-index: 1; position: relative; left: 60%;}
+        .intro_pic .img{border-radius: 70%; width: 300px; height: 300px; position: relative; left: 60%;}
         .intro_text{width: 50%; height: 890px; left: 10%; position: relative;}
         .introtexts{font-size: 30px; list-style: none;}
 
         /* say () */
-        .hello{width: 100%; position: relative; background-color: white; height: 500px; top: 800px; background-color: rgb(235, 231, 226);}
+        .hello{width: 100%; position: relative; background-color: white; height: 300px; top: 1000px; background-color: rgb(235, 231, 226); z-index: 1;}
         .say{width: 100%; margin: 10px auto; position: relative; color: white; font-size: 95px;}
         .S{width: 90%; margin: 10px auto; background-color: white(252, 252, 252); height: 300px; position: relative;} 
 
         
-        .S0{position: absolute; left: 50%; top: 50%; transform: translate(-30%, -50%); height: 300px; color: black; width: 80%;}
+        .S0{position: absolute; left: 50%; top: 50%; transform: translate(-40%, -50%); height: 300px; color: black; width: 1000px;}
         .S1{animation-name: hello; animation-duration: 12s; animation-iteration-count: infinite; }
         .S2{animation-name: hello; animation-duration: 12s; animation-iteration-count: infinite; }
         .S3{animation-name: hello; animation-duration: 12s; animation-iteration-count: infinite; }
@@ -76,7 +76,7 @@
         .S6{animation-name: hello; animation-duration: 12s; animation-iteration-count: infinite; }
         .S7{animation-name: hello; animation-duration: 12s; animation-iteration-count: infinite; }
 
-        .E0{position: absolute; left: 50%; top: 50%; transform: translate(-25%, -50%); height: 300px; color: black; width: 80%;}
+        .E0{position: absolute; left: 50%; top: 50%; transform: translate(-40%, -50%); height: 300px; color: black; width: 800px;}
         .E1{animation-name: hello_E; animation-duration: 12s; animation-iteration-count: infinite;}
         .E2{animation-name: hello_E; animation-duration: 12s; animation-iteration-count: infinite; }
         .E3{animation-name: hello_E; animation-duration: 12s; animation-iteration-count: infinite; }
@@ -85,7 +85,7 @@
         .E6{animation-name: hello_E; animation-duration: 12s; animation-iteration-count: infinite; }
         .E7{animation-name: hello_E; animation-duration: 12s; animation-iteration-count: infinite; }
 
-        .J0{position: absolute; left: 50%; top: 50%; transform: translate(-25%, -50%); height: 300px; color: black; width: 80%;}
+        .J0{position: absolute; left: 50%; top: 50%; transform: translate(-40%, -50%); height: 300px; color: black; width: 1000px;}
         .J1{animation-name: hello_J; animation-duration: 12s; animation-iteration-count: infinite;}
         .J2{animation-name: hello_J; animation-duration: 12s; animation-iteration-count: infinite; }
         .J3{animation-name: hello_J; animation-duration: 12s; animation-iteration-count: infinite;}
@@ -94,7 +94,7 @@
         .J6{animation-name: hello_J; animation-duration: 12s; animation-iteration-count: infinite;  }
         .J7{animation-name: hello_J; animation-duration: 12s; animation-iteration-count: infinite; }
 
-        .P0{position: absolute; left: 50%; top: 50%; transform: translate(-15%, -50%); height: 300px; color: black; width: 80%;}
+        .P0{position: absolute; left: 50%; top: 50%; transform: translate(-30%, -50%); height: 300px; color: black; width: 800px;}
         .P1{animation-name: hello_P; animation-duration: 12s; animation-iteration-count: infinite; }
         .P2{animation-name: hello_P; animation-duration: 12s; animation-iteration-count: infinite; }
         .P3{animation-name: hello_P; animation-duration: 12s; animation-iteration-count: infinite; }
@@ -138,7 +138,24 @@
           to{display: inline;}
         }
         
+        /* 기본정보 */
+        .back_info{top: 1000px; width: 100%; height: 810px; background-color: rgb(235, 231, 226); z-index: 2; position: relative; }
+        .info{position: relative; left: 40%;}
+        .info [class $=tag] {font-size: 15px;  color: black; }
+        .info [class $=text] {font-size: 50px;}
+        .follow_git {border: 1px solid black; width: 10px; height: 5px; text-align: center; margin: 10px; font-size: 25px; 
+          text-decoration: none; background-color: rgb(235, 231, 226); color: black;}
 
+        /*mbti 성격 정보*/
+        .mbti_img_th{position: relative; width: 900px; height: 900px;}
+        .mbti_img{width: 800px; height: 900px; margin: 30px auto; left: 30px; position: relative;}
+        .mbti_head{position: relative; transform: translateY(-120px); font-size: 16px;}
+        .mbti_text{width: 400px; height: 900px; text-align: center; font-size: 40px; position: relative;}
+        .mbti_main{font-size: 30px; list-style: upper-alpha;}
+        .mbit_img_text{font-size: 15px; position: relative; transform: translate(570px, -30px);}
+        .back_mbti{background-color: rgb(235, 231, 226); width: 100%; height: 910px; transform: translateY(-10px);}
+        .footer{font-size: 200px; text-align: center; font-family:Arial, Helvetica, sans-serif; background-color: rgb(235, 231, 226); height: 500px; transform: translateY(-33px);}
+        .footer_text{transform: translateY(150px);}
         
     </style>
 
@@ -163,26 +180,26 @@
          </nav>
         </div>
       -->
+
+              <!-- 처음 인사 -->
+              <div class="first_texts_container">
+                <!-- <img src="img/main page.png" style="width: 100%; height: 890px;"> -->
+               
+                 <div class="first_texts">
+                    <img class="ash" img src="img/Ash image.jpg">
+                 </div>
+                 <br>
+         
+                 <!--
+                 <div class="button">
+                 <button class="start_button">시작!</button>
+         
+                 </div>-->
+                 </div>
+                 
     </head>
   <body>
-
-        <!-- 처음 인사 -->
-        <div class="first_texts_container">
-       <!-- <img src="img/main page.png" style="width: 100%; height: 890px;"> -->
-      
-        <div class="first_texts">
-           <img class="ash" img src="img/Ash image.jpg">
-        </div>
-        <br>
-
-        <!--
-        <div class="button">
-        <button class="start_button">시작!</button>
-
-        </div>-->
-        </div>
-        
-    <div class="main">
+     
         <!-- 기본 소개 -->
        
         <!--
@@ -264,9 +281,67 @@
                 </div>
           </div>
         </div>
- 
+        
+        <div class="back_info">
+        <div class="info">
+        <div class="name"> 
+          <div class="name_tag"> (NAME) </div>
+          <div class="text"> 안상현 </div>
+        </div>
+
+        <div class="age"> 
+          <div class="age_tag"> (BIRTH DATE) </div>
+          <div class="text"> 1998. 10. 01 (26(24))  </div>
+        </div>
+
+        <div class="email"> 
+          <div class="email_tag"> (EMAIL) </div>
+          <div class="text"> jklli3@naver.com </div>
+        </div>
+        
+        <div class="follow"> 
+          <div class="follow_tag"> (FOLLOW) </div>
+          <a class="follow_git" href="https://github.com/Git-A-sh/supplydepot.git"> Git </a>
+        </div>
+        </div>
+      </div>
+
+      <div>
+        <table class="back_mbti">
+          <tr> 
+            <th class="mbti_img_th" >
+              <img  class="mbti_img" src="img/infj.avif">
+            </th>
+
+            <th class="mbti_text">
+              <div class="mbti_head"> (MBTI) </div>
+              <div> INFJ </div>
+              <div class="mbti_ani">
+                <img src="img/infj_기린.png">
+              <div> 소심한 기린 </div>
+              <br>
+              <div> 
+                <ul class="mbti_main">
+                  <li> 열정적 </li>
+                  <li> 조심스러움 </li>
+                  <li> 신중함 </li>
+                  <li> 내성적 </li>
+                </ul>
+              </div>
+              </div>
+            </th>
+          </tr>
+        </table>
+        <div class="mbit_img_text"> (내성적이지만 함께하는 것도 좋아요!)</div>
+
+        <div class="footer"> 
+          <div class="footer_text"> SEE YOU AGAIN !</div>
+        </div>
+      </div>
+
       </table>
-        <!--자기 소개 시작-->
+
+        <!--자기 소개 시작
          <div class="pr_texts">
       <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
         <h4 id="scrollspyHeading1"> 나의 소개 </h4>
@@ -277,8 +352,9 @@
         <p>...</p>
       </div>
         </div>
+        -->
 
-
-    </div>
+        
+  
   </body>
 </html>
